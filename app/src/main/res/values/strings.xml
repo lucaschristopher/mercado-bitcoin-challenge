@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Mercado Bitcoin Challenge</string>
+    <string name="mb_default_error_message">Ocorreu um erro. Tente novamente.</string>
+    <string name="mb_screen_title">Mercado Bitcoin</string>
+    <string name="mb_diary_usd_volume_label">Volume diário USD: </string>
+    <string name="mb_name_label">Nome: </string>
+    <string name="mb_id_label">ID: </string>
+    <string name="mb_website_label">Website: </string>
+    <string name="mb_order_book_start_data_label">"Order Book Start Data: "</string>
+    <string name="mb_order_book_end_data_label">"Order Book End Data: "</string>
+    <string name="mb_volume_1_hour_usd_label">"Volume 1 hour USD: "</string>
+    <string name="mb_volume_1_day_usd_label">"Volume 1 day USD: "</string>
+    <string name="mb_volume_1_month_usd_label">"Volume 1 month USD: "</string>
+    <string name="mb_rank_label">"Rank: "</string>
+    <string name="mb_data_trade_start_label">"Data Trade Start: "</string>
+    <string name="mb_data_trade_end_label">"Data Trade End: "</string>
+    <string name="mb_back_button_content_description">back button</string>
+    <string name="mb_details_label">Details</string>
 </resources>

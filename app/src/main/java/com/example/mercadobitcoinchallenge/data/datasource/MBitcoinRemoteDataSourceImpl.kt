@@ -11,7 +11,7 @@ internal class MBitcoinRemoteDataSourceImpl @Inject constructor(
 ) : MBitcoinRemoteDataSource {
 
     override suspend fun getExchangeList(): Flow<List<ExchangeResponse>> = flow {
-        val response = service.getExchangeList(page = 1, pageSize = 10) // TODO: Implement pagination
+        val response = service.getExchangeList()
         emit(response)
     }
 }

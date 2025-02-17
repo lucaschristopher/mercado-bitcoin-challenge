@@ -6,7 +6,6 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ViewModelComponent
-import javax.inject.Singleton
 
 @Module
 @InstallIn(ViewModelComponent::class)
@@ -15,5 +14,5 @@ internal object UseCaseModule {
     @Provides
     fun providesGetExchangeListUseCase(
         repository: MBitcoinRepository
-    ): GetExchangeListUseCase = GetExchangeListUseCase(repository::getExchangeList)
+    ): GetExchangeListUseCase = GetExchangeListUseCase(repository)
 }

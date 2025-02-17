@@ -10,7 +10,7 @@ internal class RequestInterceptor : Interceptor {
 
     override fun intercept(chain: Interceptor.Chain): Response {
         val builder = chain.request().newBuilder().apply {
-            addHeader(AUTHORIZATION, "Bearer ${BuildConfig.API_KEY}")
+            addHeader(AUTHORIZATION, BuildConfig.API_KEY)
         }
         return chain.proceed(builder.build())
     }
