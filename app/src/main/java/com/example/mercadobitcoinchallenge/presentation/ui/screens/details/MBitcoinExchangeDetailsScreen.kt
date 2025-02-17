@@ -25,6 +25,7 @@ import com.example.mercadobitcoinchallenge.commons.extensions.toDollar
 import com.example.mercadobitcoinchallenge.commons.utils.DateUtils
 import com.example.mercadobitcoinchallenge.domain.model.ExchangeModel
 import com.example.mercadobitcoinchallenge.presentation.ui.components.CustomTextComponent
+import com.example.mercadobitcoinchallenge.presentation.ui.theme.Brand01
 import com.example.mercadobitcoinchallenge.presentation.ui.theme.NeutralLight01
 import com.example.mercadobitcoinchallenge.presentation.ui.theme.NeutralLight02
 import com.example.mercadobitcoinchallenge.presentation.ui.theme.Typography
@@ -62,12 +63,13 @@ internal fun MBitcoinExchangeDetailsScreen(
                     contentDescription = stringResource(R.string.mb_back_button_content_description)
                 )
             }
+
             Text(
-                modifier = Modifier,
                 text = stringResource(R.string.mb_details_label),
+                color = Brand01,
                 style = Typography.titleLarge.copy(
                     fontFamily = ibmSansSerifFamily,
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.ExtraBold
                 )
             )
         }

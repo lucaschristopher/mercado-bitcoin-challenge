@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Mercado Bitcoin Challenge</string>
-    <string name="mb_default_error_message">Ocorreu um erro. Tente novamente.</string>
+    <string name="mb_default_error_message">Ops! Ocorreu um erro…</string>
     <string name="mb_screen_title">Mercado Bitcoin</string>
     <string name="mb_diary_usd_volume_label">Volume diário USD: </string>
     <string name="mb_name_label">Nome: </string>
@@ -16,4 +16,5 @@
     <string name="mb_data_trade_end_label">"Data Trade End: "</string>
     <string name="mb_back_button_content_description">back button</string>
     <string name="mb_details_label">Details</string>
+    <string name="mb_try_again_label">Tentar novamente</string>
 </resources>

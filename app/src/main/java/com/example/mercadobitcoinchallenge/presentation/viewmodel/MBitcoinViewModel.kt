@@ -35,7 +35,12 @@ internal class MBitcoinViewModel @Inject constructor(
             .onStart { updateUiState { copy(isLoading = true) } }
             .onCompletion { updateUiState { copy(isLoading = false) } }
             .onSuccess { exchanges ->
-                updateUiState(uiState.value.copy(exchanges = exchanges))
+                updateUiState(
+                    uiState.value.copy(
+                        exchanges = exchanges,
+                        exception = null
+                    )
+                )
             }
             .onError {
                 updateUiState(uiState.value.copy(exception = it as? Exception))

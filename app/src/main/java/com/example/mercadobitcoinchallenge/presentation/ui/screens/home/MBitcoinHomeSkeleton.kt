@@ -11,7 +11,6 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -30,18 +29,15 @@ import androidx.compose.ui.graphics.TileMode
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.mercadobitcoinchallenge.presentation.ui.theme.NeutralLight03
 import com.example.mercadobitcoinchallenge.presentation.ui.theme.NeutralLightPure
-import com.example.mercadobitcoinchallenge.presentation.ui.theme.dp10
 import com.example.mercadobitcoinchallenge.presentation.ui.theme.dp16
 import com.example.mercadobitcoinchallenge.presentation.ui.theme.dp24
 import com.example.mercadobitcoinchallenge.presentation.ui.theme.dp4
-import com.example.mercadobitcoinchallenge.presentation.ui.theme.dp40
 import com.example.mercadobitcoinchallenge.presentation.ui.theme.dp60
 
 @Composable
 internal fun MBitcoinHomeSkeleton(isVisible: Boolean = true) {
     if (isVisible) Box(
         modifier = Modifier
-            .fillMaxSize()
             .background(NeutralLightPure)
             .padding(top = dp24)
     ) {
@@ -51,15 +47,7 @@ internal fun MBitcoinHomeSkeleton(isVisible: Boolean = true) {
                 .padding(dp16),
             verticalArrangement = Arrangement.spacedBy(dp16)
         ) {
-            Box(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .size(dp40)
-                    .background(NeutralLight03)
-                    .shimmerBackground(RoundedCornerShape(dp4))
-            )
-
-            Spacer(modifier = Modifier.height(dp10))
+            Spacer(modifier = Modifier.height(dp24))
 
             (1..5).forEach { _ ->
                 Box(

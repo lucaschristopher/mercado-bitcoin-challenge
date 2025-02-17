@@ -121,7 +121,7 @@ internal fun MBitcoinListItemComponent(
                     text = item.volume1dayUSD.toBigDecimal().toDollar(),
                     style = TextStyle(
                         fontFamily = ibmSansMonoFamily
-                    ),
+                    )
                 )
             }
         }
