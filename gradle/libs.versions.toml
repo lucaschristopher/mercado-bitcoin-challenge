@@ -38,6 +38,7 @@ navigation = { module = "androidx.navigation:navigation-compose", version.ref = 
 androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
 kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTest" }
 kotlinx-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlinxCoroutinesTest" }
+navigation-test = { module = "androidx.navigation:navigation-testing", version.ref = "navigation" }
 mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
 
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }

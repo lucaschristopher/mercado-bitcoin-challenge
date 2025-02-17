@@ -26,6 +26,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.TileMode
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.mercadobitcoinchallenge.presentation.ui.theme.NeutralLight03
 import com.example.mercadobitcoinchallenge.presentation.ui.theme.NeutralLightPure
@@ -34,12 +35,15 @@ import com.example.mercadobitcoinchallenge.presentation.ui.theme.dp24
 import com.example.mercadobitcoinchallenge.presentation.ui.theme.dp4
 import com.example.mercadobitcoinchallenge.presentation.ui.theme.dp60
 
+private const val SKELETON_TAG = "skeleton"
+
 @Composable
 internal fun MBitcoinHomeSkeleton(isVisible: Boolean = true) {
     if (isVisible) Box(
         modifier = Modifier
             .background(NeutralLightPure)
             .padding(top = dp24)
+            .testTag(SKELETON_TAG)
     ) {
         Column(
             modifier = Modifier

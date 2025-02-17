@@ -6,11 +6,14 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.mercadobitcoinchallenge.domain.model.ExchangeModel
 import com.example.mercadobitcoinchallenge.presentation.mvi.MBitcoinAction
 import com.example.mercadobitcoinchallenge.presentation.mvi.MBitcoinState
 import com.example.mercadobitcoinchallenge.presentation.ui.theme.dp16
+
+private const val HOME_CONTENT_TAG = "home content"
 
 @Composable
 internal fun MBitcoinHomeContent(
@@ -22,6 +25,7 @@ internal fun MBitcoinHomeContent(
         modifier = modifier
             .fillMaxWidth()
             .padding(dp16)
+            .testTag(HOME_CONTENT_TAG)
     ) {
         items(uiState.exchanges) { item ->
             MBitcoinListItemComponent(
