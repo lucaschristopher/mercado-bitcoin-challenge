@@ -33,7 +33,7 @@ android {
             buildConfigField(
                 type = "String",
                 name = "API_KEY",
-                value = "\"aace84bd-8bc8-474f-8c78-ae5e0858e3ff\""
+                value = "\"YOUR-API-TOKEN-HERE\""
             )
         }
 
@@ -49,7 +49,7 @@ android {
             buildConfigField(
                 type = "String",
                 name = "API_KEY",
-                value = "\"aace84bd-8bc8-474f-8c78-ae5e0858e3ff\""
+                value = "\"YOUR-API-TOKEN-HERE\""
             )
 
             proguardFiles(
