@@ -1,4 +1,4 @@
-package com.example.mercadobitcoinchallenge.ui.theme
+package com.example.mercadobitcoinchallenge.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

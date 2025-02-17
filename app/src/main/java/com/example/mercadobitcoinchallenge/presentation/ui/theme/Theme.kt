@@ -1,4 +1,4 @@
-package com.example.mercadobitcoinchallenge.ui.theme
+package com.example.mercadobitcoinchallenge.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build
